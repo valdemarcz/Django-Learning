@@ -1,4 +1,4 @@
-version: '1.25.0'
+version: '3.8'
 services:
   backend:
     build:
@@ -7,10 +7,10 @@ services:
     ports: 
       - 8000:8000
     volumes:
-      -.:/app
+      - .:/app
     depends_on:
       - db
-      
+
   db:
     image: mysql:5.7.22
     restart: always
